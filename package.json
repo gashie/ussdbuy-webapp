@@ -36,6 +36,7 @@
     "google-maps-react": "^2.0.6",
     "gridjs": "^6.0.6",
     "gridjs-react": "^6.0.1",
+    "http-proxy-middleware": "^2.0.6",
     "i18next": "^22.4.10",
     "i18next-browser-languagedetector": "^7.0.1",
     "leaflet": "^1.9.3",
@@ -162,6 +163,5 @@
   },
   "devDependencies": {
     "babel-plugin-prismjs": "^2.1.0"
-  },
-  "proxy": "http://localhost:5001"
+  }
 }
