@@ -162,7 +162,7 @@ const ManageCategories = () => {
       full_name: (contact && contact.full_name) || '',
       phone_number:(contact && contact.phone_number) || '',
       email: (contact && contact.email) || '',
-      status:(contact && contact.status) || '',
+      status:(contact && contact.status) || 0,
     },
     validationSchema: Yup.object({
       full_name: Yup.string().required("Please provide full name"),
@@ -377,7 +377,7 @@ const ManageCategories = () => {
   const [assignTag, setAssignTag] = useState([]);
 
   const statusList = [
-    { label: "Whitelist", value: 1 },
+    { label: "Whitelist", value: 1},
     { label: "Block", value: 0 },
   ];
 
@@ -625,6 +625,8 @@ const ManageCategories = () => {
                                 </FormFeedback>
                               ) : null}
                             </div>
+
+                            
                           </Col>
 
                         </Row>
